@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConsignmentShopLibrary;
 
 namespace ConsginmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
+        private Store store = new Store();
+
         public ConsignmentShop()
         {
             InitializeComponent();
