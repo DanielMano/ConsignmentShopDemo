@@ -31,8 +31,8 @@
             this.headerText = new System.Windows.Forms.Label();
             this.itemsListBox = new System.Windows.Forms.ListBox();
             this.itemsListBoxLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.shoppingCartLabel = new System.Windows.Forms.Label();
+            this.shoppingCartListBox = new System.Windows.Forms.ListBox();
             this.addToCart = new System.Windows.Forms.Button();
             this.makePurchase = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -66,24 +66,24 @@
             this.itemsListBoxLabel.TabIndex = 2;
             this.itemsListBoxLabel.Text = "Store Items";
             // 
-            // label1
+            // shoppingCartLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Store Items";
+            this.shoppingCartLabel.AutoSize = true;
+            this.shoppingCartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoppingCartLabel.Location = new System.Drawing.Point(428, 72);
+            this.shoppingCartLabel.Name = "shoppingCartLabel";
+            this.shoppingCartLabel.Size = new System.Drawing.Size(124, 20);
+            this.shoppingCartLabel.TabIndex = 4;
+            this.shoppingCartLabel.Text = "Shopping Cart";
             // 
-            // listBox1
+            // shoppingCartListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(432, 95);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(242, 184);
-            this.listBox1.TabIndex = 3;
+            this.shoppingCartListBox.FormattingEnabled = true;
+            this.shoppingCartListBox.ItemHeight = 20;
+            this.shoppingCartListBox.Location = new System.Drawing.Point(432, 95);
+            this.shoppingCartListBox.Name = "shoppingCartListBox";
+            this.shoppingCartListBox.Size = new System.Drawing.Size(242, 184);
+            this.shoppingCartListBox.TabIndex = 3;
             // 
             // addToCart
             // 
@@ -93,6 +93,7 @@
             this.addToCart.TabIndex = 5;
             this.addToCart.Text = "Add To Cart ->";
             this.addToCart.UseVisualStyleBackColor = true;
+            this.addToCart.Click += new System.EventHandler(this.addToCart_Click);
             // 
             // makePurchase
             // 
@@ -102,7 +103,6 @@
             this.makePurchase.TabIndex = 6;
             this.makePurchase.Text = "Purchase";
             this.makePurchase.UseVisualStyleBackColor = true;
-            this.makePurchase.Click += new System.EventHandler(this.button1_Click);
             // 
             // ConsignmentShop
             // 
@@ -111,8 +111,8 @@
             this.ClientSize = new System.Drawing.Size(700, 481);
             this.Controls.Add(this.makePurchase);
             this.Controls.Add(this.addToCart);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.shoppingCartLabel);
+            this.Controls.Add(this.shoppingCartListBox);
             this.Controls.Add(this.itemsListBoxLabel);
             this.Controls.Add(this.itemsListBox);
             this.Controls.Add(this.headerText);
@@ -130,8 +130,8 @@
         private System.Windows.Forms.Label headerText;
         private System.Windows.Forms.ListBox itemsListBox;
         private System.Windows.Forms.Label itemsListBoxLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label shoppingCartLabel;
+        private System.Windows.Forms.ListBox shoppingCartListBox;
         private System.Windows.Forms.Button addToCart;
         private System.Windows.Forms.Button makePurchase;
     }
