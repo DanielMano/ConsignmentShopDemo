@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsginmentShopUI", "ConsginmentShopUI\ConsginmentShopUI.csproj", "{2AAE30C9-D9DC-4ABA-8984-84A8D3963E8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentShopUI", "ConsginmentShopUI\ConsignmentShopUI.csproj", "{2AAE30C9-D9DC-4ABA-8984-84A8D3963E8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsignmentShopLibrary", "ConsignmentShopLibrary\ConsignmentShopLibrary.csproj", "{7BB32F0D-3083-481E-A303-00C79D442094}"
 EndProject
